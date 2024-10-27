@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks Global Academy</title>
+    <style>
+           * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: "Arial", sans-serif;
+       }
+       body {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header img {
+  height: 20px;
+}
+
+.header button {
+  margin-left: 10px;
+  background-color: #ffffff;
+  color: rgb(6, 7, 7);
+  border: 1px solid;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background-color: #005f39;
+  color: #ffffff;
+}
+
+.content {
+  display: flex;
+  width: 80%;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.left-hand {
+  flex: 1;
+  display: flex;
+}
+
+.left-hand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-hand {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #1e3932;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+a {
+  color: #00754a;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input,
+select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.phone-number-container {
+  margin-bottom: 20px;
+}
+
+.phone-number {
+  display: flex;
+  gap: 10px;
+}
+
+.phone-number select,
+.phone-number input {
+  flex: 1;
+}
+
+button {
+  background-color: #00754a;
+  border: #333;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  margin-left: 150px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:over {
+  background-color: #005f39;
+}
+.pursuit {
+  position: relative;
+  display: inline-block;
+  margin: 10px 0; /* Adjust as needed */
+}
+
+.pursuit select {
+  appearance: none; /* Remove default styling */
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="%2300754a" d="M4 6l4 4 4-4z"/></svg>')
+    no-repeat right 10px center; /* Custom arrow */
+  background-size: 12px; /* Size of the custom arrow */
+}
+
+.pursuit span {
+  cursor: pointer;
+  padding-right: 10px; /* Space for the arrow */
+}
+
+    </style>
+     
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="https://ap.starbucksglobalacademy.com/assets/img/logo.e4c5e5aa.svg"alt="Starbucks Global Academy Logo"/>
+      <div class="pursuit">
+        <span> Pursuit of Good</span>
+        <!-- <select>
+          <option value="" disabled selected></option>
+          <option>Greener Apron</option>
+          <option>Greener stores</option>
+          <option>Community Champion</option>
+        </select> -->
+      </div>
+      <div>Third Place</div>
+      <div>Coffee Academy</div>
+      <div>Opportunity</div>
+      <button class="course">All Courses</button>
+      <button class="signIn">Sign in</button>
+    </header>
+    <div class="content">
+      <div class="left-hand">
+        <img
+          src="https://ap.starbucksglobalacademy.com/assets/img/rfi-bg-image.86419587.png" alt="Starbucks" />
+      </div>
+      <div class="right-hand">
+        <h1>Take courses today</h1>
+        <p
+          style="
+            color: grey;
+            "font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;" >
+
+          There are many pathways to opportunity and success, and education is a
+          great one. To get started with taking courses on Starbucks Global
+          Academy, simply enter your name and email in the form below and we
+          will send you updates and a link to your account.
+        </p>
+        <p>
+          <b>Already have an account? </b>
+          <br />
+          <a href="#">
+            <u>Sign in</u>
+        </a>
+          <span style="font-family: Verdana, Geneva, Tahoma, sans-serif">to add these courses to your account.</span>
+        </p>
+        <br />
+        <br />
+
+        <!-- Form starts here -->
+        <form>
+            <label for="fname">First Name*</label>
+            <input type="text" id="fname" name="fname" required />
+  
+            <label for="lname">Last Name*</label>
+            <input type="text" id="lname" name="lname" required />
+  
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required />
+  
+            <label for="location">Location*</label>
+            <select id="location" name="location" required>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="SK">South Korea</option>
+              <option value="location2">New Zealand</option>
+              <option value="location2">Philippines</option>
+              <option value="location2">Singapore</option>
+              <option value="location2">South Korea</option>
+              <option value="location2">Taiwan</option>
+              <option value="location2">Thailand</option>
+              <option value="location2">Vietnam</option>
+            </select>
+  
+            <!-- Phone Number Section -->
+            <div class="phone-number-container">
+              <label for="phone-number">Phone number*</label>
+              <div class="phone-number">
+                <select required>
+                  <option value="+91">+91</option>
+                  <option value="+1">+1</option>
+                  <option value="+82">+82</option>
+                </select>
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  placeholder="Phone number"
+                  required
+                />
+              </div>
+            </div>
+<!-- Starbucks Partner Selection -->
+<label for="partner">Are you a Starbucks Partner?*</label>
+<select required>
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+</select>
+<br />
+
+<!-- Submit Button -->
+<button type="submit"><b>Next</b>
+</button>
+</form>
+<!-- Form ends here -->
+</div>
+</div>
+ </body>
+</html>  
